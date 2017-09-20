@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1505783337 source:c:\users\elpiola\desktop\trabajo practico n°2\tp_2_cascara\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1505826306 source:c:\users\elpiola\desktop\trabajo practico n°2\tp_2_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1505826013 c:\users\elpiola\desktop\trabajo practico n°2\tp_2_cascara\funciones.h
+
+1505863064 source:f:\programacion_1 laboratorio_1\trabajo practico n°2\tp_2_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"funciones.h"
+
+1505862343 f:\programacion_1 laboratorio_1\trabajo practico n°2\tp_2_cascara\funciones.h
+
+1505862815 source:f:\programacion_1 laboratorio_1\trabajo practico n°2\tp_2_cascara\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
