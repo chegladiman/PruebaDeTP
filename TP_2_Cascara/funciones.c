@@ -6,11 +6,10 @@
 #include <conio.h>
 #include <string.h>
 
-#define CANT 2
+#define CANT 1
 
 typedef struct
 {
-
     char nombre[50];
     int edad;
     int estado;
@@ -82,6 +81,7 @@ void listaOrdenadaPorNombre(EPersona persona[])
 void borrarPersona(EPersona persona[])
 {
     EPersona aux;
+    char vacio[] = "vacio";
     int i;
 
     printf("Ingrese el DNI de la persona a eliminar: ");
@@ -92,7 +92,11 @@ void borrarPersona(EPersona persona[])
         if(aux.dni == persona[i].dni)
         {
             persona[i].estado = 0;
+            strcpy(persona[i].nombre,vacio);
+            persona[i].edad = 0;
+            persona[i].dni = 0;
             printf("La persona a sido eliminada!\n");
+            printf("Nombre: %s\nEdad: %d\nDNI: %ld\nEstado: %d\n",persona[i].nombre,persona[i].edad,persona[i].dni,persona[i].estado);
             break;
         }
         else
