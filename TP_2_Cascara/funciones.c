@@ -6,7 +6,7 @@
 #include <conio.h>
 #include <string.h>
 
-#define CANT 1
+#define CANT 2
 
 typedef struct
 {
@@ -54,27 +54,26 @@ void agregarEPersona(EPersona persona[])
 void listaOrdenadaPorNombre(EPersona persona[])
 {
     int i,j;
-    EPersona nombreAux[51];
+    char nombreAux[51];
     for(i = 0; i < CANT -1; i++)
     {
         for (j=i+1; j<CANT; j++)
         {
-            if(i == j)
-            {
                 if (strcmp(persona[i].nombre,persona[j].nombre)>0)
                 {
-                    fflush(stdin);
                     strcpy(nombreAux,persona[i].nombre);
                     strcpy(persona[i].nombre,persona[j].nombre);
-                    strcpy(persona[i].nombre,nombreAux);
+                    strcpy(persona[j].nombre,nombreAux);
                 }
-            }
         }
     }
     for(i = 0; i<CANT; i++)
         {
-            fflush(stdin);
-            printf("%d- %s\n",i ,persona[i].nombre);
+            if(persona[i].estado == 1)
+            {
+                printf("%s\n" ,persona[i].nombre);
+            }
+
         }
 }
 

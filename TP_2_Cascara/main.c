@@ -4,7 +4,7 @@
 #include <string.h>
 #include "funciones.h"
 
-#define CANT 1
+#define CANT 2
 
 int main()
 {
