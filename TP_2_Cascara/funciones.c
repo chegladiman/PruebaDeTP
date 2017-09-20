@@ -71,6 +71,7 @@ void listaOrdenadaPorNombre(EPersona persona[])
         {
             if(persona[i].estado == 1)
             {
+                printf("LISTA\n");
                 printf("%s\n" ,persona[i].nombre);
             }
 
@@ -104,6 +105,34 @@ void borrarPersona(EPersona persona[])
             break;
         }
     }
+}
+
+void graficoEdades(EPersona persona[])
+{
+    int i;
+    int menor,mayor,viejo;
+    long int edadAux;
+
+    for(i = 0;i<CANT;i++)
+    {
+        strcpy(edadAux,persona[i].edad);
+        if(edadAux <= 18)
+        {
+            menor = edadAux;
+        }
+        else if(edadAux >= 19 && edadAux <= 35)
+        {
+            mayor = edadAux;
+        }
+        else if(edadAux > 35)
+        {
+            viejo = edadAux;
+        }
+    }
+
+
+
+
 }
 
 
